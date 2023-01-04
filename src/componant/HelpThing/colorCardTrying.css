@@ -1,0 +1,36 @@
+.cards{
+    border:4px solid  rgb(45, 162, 160) ;
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-around;
+    height: 50px;
+    margin: 10px;
+    padding: 5px;
+    align-items: center;
+    position: relative;
+    font-style: oblique;
+    color: rgb(91, 97, 97);
+}
+.delete{
+ background-color: rgb(233, 26, 26);
+ width: 30px;
+ border-radius: 50%;
+ font-weight: bold;
+ font-size: large;
+ border: none;
+ position: absolute;
+ top:-13px;
+ right: -13px;
+
+ 
+}
+.circle{
+ width: 50px;
+ height: 40px;
+ border: 2px 3ppx black;
+ border-radius: 50%;
+}
+.delete:hover{
+ cursor: pointer;
+ box-shadow: 2px 2px 3px black;
+}

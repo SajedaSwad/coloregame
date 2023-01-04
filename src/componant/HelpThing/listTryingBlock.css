@@ -1,0 +1,8 @@
+.list_block{
+   display: block;
+   height: 400px;
+   max-height: 400px;
+   flex-wrap: wrap;
+   overflow-y: scroll;
+   flex-direction: column-reverse;
+}

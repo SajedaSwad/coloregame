@@ -1,0 +1,94 @@
+.all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gameform{
+    margin: 15px;
+    padding: 10px;
+    border-radius: 15px;
+    flex-direction: column;
+    border: 3px solid rgb(29, 168, 152);
+    width:500px;
+    font-size: medium;
+    height: auto;
+    color: rgb(152, 147, 147);
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.gameform>h1{
+    margin: 10px  10px;
+    padding:3px;
+}
+.winner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px
+  }
+  
+  .winner>.correct {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 19px;
+    font-weight: 700;
+    animation: colorChange 5s infinite alternate;
+  }
+  
+  @keyframes colorChange {
+    0% {
+      color: red
+    }
+  
+    10% {
+      color: #8e44ad
+    }
+  
+    20% {
+      color: #1abc9c
+    }
+  
+    30% {
+      color: #d35400
+    }
+  
+    40% {
+      color: #00f
+    }
+  
+    50% {
+      color: #fbff00
+    }
+  
+    60% {
+      color: #ff002b
+    }
+  
+    70% {
+      color: #2980b9
+    }
+  
+    80% {
+      color: #e90ff1
+    }
+  
+    90% {
+      color: #2980b9
+    }
+  
+    to {
+      color: pink
+    }
+  }
+  
+  .winner>.play-again-btn {
+    transition: all .1s;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #45ab59;
+    border-radius: 5px;
+    box-shadow: 1px 1px 6px rgb(0 0 0 / 16%);
+  }
+  

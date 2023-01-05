@@ -8,7 +8,7 @@ const ListTryingBlock = (props) => {
       {props.list?.map((card, i) => {
         return <ColorCardTrying
         key={i + card}
-        stats={card.states} 
+        stats={card.states}
         colors={card.colors} 
         />
         })}

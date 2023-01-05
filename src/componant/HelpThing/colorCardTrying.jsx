@@ -10,8 +10,8 @@ const ColorCardTrying = (props) => {
                     <div
                         className='circle'
                         key={color + i}
-                        style={{ background: !props.hide && (props.colors[i] || 'gray') }} >
-
+                        style={{ background: (!props.hide && (props.colors[i]))|| 'gray' }} >
+                       
                     </div>
                 )
 

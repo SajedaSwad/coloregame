@@ -12,12 +12,13 @@ const Startgame = (props) => {
     const [formColor, setFormColor] = useState(['blue', 'green', 'yellow', 'purple', 'pink']);
     const [isWin, setIsWin] = useState(false);
     const [rightAns, setRightAns] = useState(Question());
-    const setCurrentAnswerForm = (color) => { 
-        const checkwin = (userAns) => {
+    const checkwin = (userAns) => {
         if (Compare(rightAns, userAns)) {
             setIsWin(true);
-        }
-    }
+         }
+       }
+    const setCurrentAnswerForm = (color) => { 
+       
         if (currentAnswer.length < 3) {
             setCurrentAnswer([...currentAnswer, color])
         }
@@ -57,7 +58,7 @@ const Startgame = (props) => {
                         <button
                             className='play-again-btn'
                             onClick={() => {
-                                setRightAns(Question());
+                               setRightAns(Question());
                                 setList([]);
                                 setIsWin(false);
                             }}

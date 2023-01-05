@@ -8,6 +8,7 @@ const Question = (props) => {
     rand = Math.floor(Math.random() * 10) % formColor.length;
     colors.push(formColor[rand]);
   }
+  console.log ('colors',colors);
   return colors
 
 }

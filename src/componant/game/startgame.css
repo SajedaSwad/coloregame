@@ -82,6 +82,7 @@
   }
   
   .winner>.play-again-btn {
+    cursor: pointer;
     transition: all .1s;
     border: none;
     padding: 10px 20px;
@@ -90,5 +91,9 @@
     background-color: #45ab59;
     border-radius: 5px;
     box-shadow: 1px 1px 6px rgb(0 0 0 / 16%);
+  }
+  .winner>.play-again-btn:hover{
+   box-shadow: 2px 2px 3px green;
+
   }
   

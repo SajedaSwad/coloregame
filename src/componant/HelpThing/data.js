@@ -1,14 +1,14 @@
-import { useState } from "react";
+
 
 const Question = (props) => {
-  const [formColor, setFormColor] = useState(['blue', 'green', 'yellow', 'purple', 'pink']);
+  const COLOR = ['blue', 'green', 'yellow', 'purple', 'pink'];
   const colors = [];
   let rand;
   for (let i = 0; i < 4; i++) {
-    rand = Math.floor(Math.random() * 10) % formColor.length;
-    colors.push(formColor[rand]);
+    rand = Math.floor(Math.random() * 10) % COLOR.length;
+    colors.push(COLOR[rand]);
   }
-  console.log ('colors',colors);
+  // console.log ('colors',colors);
   return colors
 
 }

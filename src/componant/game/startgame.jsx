@@ -15,27 +15,27 @@ const Startgame = (props) => {
     const checkwin = (userAns) => {
         if (Compare(rightAns, userAns)) {
             setIsWin(true);
-         }
-       }
-    const setCurrentAnswerForm = (color) => { 
-       
+        }
+    }
+    const setCurrentAnswerForm = (color) => {
+
         if (currentAnswer.length < 3) {
             setCurrentAnswer([...currentAnswer, color])
         }
         else {
-            const ans = [...currentAnswer , color];
-            console.log('ans',ans);
-            console.log('rightAns',rightAns);
-            const stats = checkAnswer(ans , rightAns);
+            const ans = [...currentAnswer, color];
+            console.log('ans', ans);
+            console.log('rightAns', rightAns);
+            const stats = checkAnswer(ans, rightAns);
             console.log(stats);
             checkwin([...currentAnswer, color]);
-            list.push({ colors: [...currentAnswer, color], states: stats})
+            list.push({ colors: [...currentAnswer, color], states: stats })
             setList(list);
             setCurrentAnswer([]);
 
         }
     }
-   
+
 
 
     return (
@@ -58,12 +58,13 @@ const Startgame = (props) => {
                         <button
                             className='play-again-btn'
                             onClick={() => {
-                               setRightAns(Question());
                                 setList([]);
                                 setIsWin(false);
+                                setRightAns(Question());
+
                             }}
                         >
-                        Play Again
+                            Play Again
                         </button>
                     </div>
 

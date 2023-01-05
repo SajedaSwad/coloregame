@@ -1,5 +1,6 @@
 .list_block{
-   display: block;
+   display: flex;
+   
    height: 400px;
    max-height: 400px;
    flex-wrap: wrap;

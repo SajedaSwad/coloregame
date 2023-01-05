@@ -28,6 +28,7 @@
   }
   
   .winner>.correct {
+    font-style: oblique;
     display: inline-block;
     margin-top: 10px;
     font-size: 19px;
@@ -36,9 +37,7 @@
   }
   
   @keyframes colorChange {
-    0% {
-      color: red
-    }
+   
   
     10% {
       color: #8e44ad
@@ -48,22 +47,11 @@
       color: #1abc9c
     }
   
-    30% {
-      color: #d35400
-    }
+    
   
     40% {
       color: #00f
     }
-  
-    50% {
-      color: #fbff00
-    }
-  
-    60% {
-      color: #ff002b
-    }
-  
     70% {
       color: #2980b9
     }

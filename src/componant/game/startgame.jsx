@@ -76,7 +76,7 @@ const Startgame = (props) => {
                     </div>
                     <hr />
                     <div>
-                        <ColorCardTrying withclear colors={currentAnswer} onClick={() => setCurrentAnswerForm([])} />
+                        <ColorCardTrying withclear colors={currentAnswer} onClick={() => setCurrentAnswer([])} />
                     </div>
                     <hr />
                     <div>

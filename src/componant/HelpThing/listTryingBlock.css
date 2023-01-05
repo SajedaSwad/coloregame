@@ -1,9 +1,11 @@
 .list_block{
    display: flex;
-   
    height: 400px;
    max-height: 400px;
-   flex-wrap: wrap;
+   /* flex-wrap: wrap; */
    overflow-y: scroll;
    flex-direction: column-reverse;
 }
+/* .list_block>.cards{
+  width: 100%;
+} */
